@@ -9,4 +9,4 @@ app.include_router(inventory_router)
 
 @app.get("/")
 def root():
-    return {"message": "BUSSCOLLAB API is running"}
+    return {"message": "busscollab API is running"}
