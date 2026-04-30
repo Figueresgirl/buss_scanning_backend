@@ -27,11 +27,7 @@ async def scan_file(file: UploadFile = File(...)):
         # 🔹 Send extracted text to your AI parser
         parsed = parse_text_to_items(content)
 
-        return {
-            "message": "File scanned successfully",
-            "extracted_text": content,
-            "parsed_data": parsed
-        }
-
-    except Exception as e:
-        return {"error": str(e)}
+    return {
+        "message": "Scan successful",
+        "data": result
+    }
